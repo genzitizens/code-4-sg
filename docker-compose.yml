@@ -1,0 +1,16 @@
+
+services:
+  nextjs:
+    container_name: nextjs-dev
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - .:/app:cached
+      - /app/node_modules  # avoids overwriting with host's node_modules
+    ports:
+      - "3000:3000"
+    command: sh -c "yarn install && yarn dev"
+    environment:
+      - NODE_ENV=development
+    tty: true
+
