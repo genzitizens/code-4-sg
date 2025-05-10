@@ -26,6 +26,6 @@ jobs:
       DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       GHCR_ORG: ${{ secrets.GHCR_ORG }}
 
-      with:
+    with:
       IMAGE_NAME: "code-4-sg"
       COMPOSE_PATH: "/home/exeltan/code-4-sg/docker-compose.yml"
