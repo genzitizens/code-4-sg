@@ -5,16 +5,8 @@ on:
     branches: [main]
 
 jobs:
-  #react-ci:
-  #  uses: genzitizens/ci-templates/.github/workflows/react-ci.yml@main
-  #  secrets:
-  #    DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-
   push-ghcr:
-    # needs: react-ci
-    # if : needs.react-ci.result == 'success' # react-ci must be successful in order to allow this 
-    
-    uses: genzitizens/ci-templates/.github/workflows/push-to-ghcr.yml@main
+     uses: genzitizens/ci-templates/.github/workflows/push-to-ghcr.yml@main
     with:
       image_name: code-4-sg
     secrets:
@@ -30,6 +22,7 @@ jobs:
       VPS_USER: ${{ secrets.VPS_USER }}
       GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
       GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }}
+      DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
     with:
       IMAGE_NAME: "code-4-sg"
       COMPOSE_PATH: "/home/exeltan/code-4-sg/docker-compose.yml"
