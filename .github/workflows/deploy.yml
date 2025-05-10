@@ -22,8 +22,8 @@ jobs:
       GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
 
   deploy:
-    uses: genzitizens/ci-templates/.github/workflows/deploy-vps.yml@main
     needs: push-ghcr
+    uses: genzitizens/ci-templates/.github/workflows/deploy-to-vps.yml@main
     secrets:
       SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       VPS_HOST: ${{ secrets.VPS_HOST }}
