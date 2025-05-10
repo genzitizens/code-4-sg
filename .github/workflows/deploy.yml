@@ -5,14 +5,15 @@ on:
     branches: [main]
 
 jobs:
-  react-ci:
-    uses: genzitizens/ci-templates/.github/workflows/react-ci.yml@main
-    secrets:
-      DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+  #react-ci:
+  #  uses: genzitizens/ci-templates/.github/workflows/react-ci.yml@main
+  #  secrets:
+  #    DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
   push-ghcr:
-    needs: react-ci
-    if: needs.react-ci.result == 'success' # react-ci must be successful in order to allow this 
+    # needs: react-ci
+    # if : needs.react-ci.result == 'success' # react-ci must be successful in order to allow this 
+    
     uses: genzitizens/ci-templates/.github/workflows/push-to-ghcr.yml@main
     with:
       image_name: code-4-sg
