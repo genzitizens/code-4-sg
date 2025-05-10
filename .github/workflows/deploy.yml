@@ -18,7 +18,7 @@ jobs:
     with:
       image_name: code-4-sg
     secrets:
-      GHCR_TOKEN: ${{ secrets.GHCR_PAT }}
+      GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
       DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
   deploy:
@@ -28,7 +28,7 @@ jobs:
       SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       VPS_HOST: ${{ secrets.VPS_HOST }}
       VPS_USER: ${{ secrets.VPS_USER }}
-      GHCR_PAT: ${{ secrets.GHCR_PAT }}
+      GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
       GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }}
     with:
       IMAGE_NAME: "code-4-sg"

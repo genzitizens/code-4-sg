@@ -1,6 +1,6 @@
 {
   "company": {
-    "name": "React landing page 2021",
+    "name": "Code For Singapore",
     "logo": "/assets/images/logo.png"
   },
   "navigation": [
@@ -27,9 +27,9 @@
     "href": "#"
   },
   "mainHero": {
-    "title": "Use me as your",
-    "subtitle": "landing page.",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "title": "Code for",
+    "subtitle": "Singapore.",
+    "description": "A computer reads ones and zeros, but behind the code is a human heart building projects.",
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": {
       "text": "Get started",
@@ -41,17 +41,17 @@
     }
   },
   "product": {
-    "title": "React landing page 2021",
+    "title": "Code For Singapore",
     "items": [
       {
         "title": "A plug n play template",
         "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
-        "img": "/assets/images/product1.jpg"
+        "img": "/assets/images/product1.svg"
       },
       {
         "title": "Make it your own!",
         "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
-        "img": "/assets/images/product2.jpg"
+        "img": "/assets/images/product2.svg"
       }
     ]
   },
