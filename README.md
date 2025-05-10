@@ -1,9 +1,5 @@
 # React.js landing page template v2
 
-### Description
-
-This is a React.js/Next.js based landing page plug-n-play template, ideal for startups/companies/service providers wanting to showcase their vision in a single page sleek and modern landing page.
-
 ### Features
 
 - 📱  Responsive design
@@ -83,9 +79,3 @@ Licensed under the MIT License, Copyright © 2021
 
 ## Liked this template? <a href="https://www.buymeacoffee.com/issaaf">Buy me a coffee ☕️</a>
 
-
-
-
----
-
-### Looking for v1? <a href="https://github.com/issaafalkattan/React-Landing-Page-Template">V1</a>
