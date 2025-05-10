@@ -7,8 +7,6 @@ on:
 jobs:
   react-ci:
     uses: genzitizens/ci-templates/.github/workflows/react-ci.yml@main
-    with:
-      node-version: "20"
     secrets:
       DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
@@ -16,8 +14,6 @@ jobs:
     needs: react-ci
     if: needs.react-ci.result == 'success' # react-ci must be successful in order to allow this 
     uses: genzitizens/ci-templates/.github/workflows/push-to-ghcr.yml@main
-    with:
-      image_name: code-4-sg
     secrets:
       GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
 
