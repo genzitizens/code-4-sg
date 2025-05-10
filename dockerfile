@@ -6,6 +6,8 @@ COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile
 
 COPY . .
+# Fix Webpack + OpenSSL 3 build crash
+ENV NODE_OPTIONS=--openssl-legacy-provider
 RUN yarn build
 
 # Use production Node.js image to serve
