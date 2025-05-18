@@ -38,8 +38,7 @@ const Features = () => {
                       alt={feature.name}
                     />
                   </div>
-                  */} 
-
+                  */}
                   <p className="ml-16 text-lg leading-6 font-medium text-gray-900">
                     {feature.name}
                   </p>
