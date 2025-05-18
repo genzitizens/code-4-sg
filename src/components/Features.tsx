@@ -27,6 +27,8 @@ const Features = () => {
             {featuresList.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
+                  {/*
+                  // TODO , make this better 
                   <div
                     className={`absolute flex items-center justify-center h-12 w-12 rounded-md bg-background text-tertiary border-primary border-4`}
                   >
@@ -36,6 +38,8 @@ const Features = () => {
                       alt={feature.name}
                     />
                   </div>
+                  */} 
+
                   <p className="ml-16 text-lg leading-6 font-medium text-gray-900">
                     {feature.name}
                   </p>
