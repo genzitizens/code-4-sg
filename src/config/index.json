@@ -5,12 +5,12 @@
   },
   "navigation": [
     {
-      "name": "Product",
+      "name": "What we do",
       "href": "product"
     },
     {
-      "name": "Features",
-      "href": "features"
+      "name": "Projects",
+      "href": "projects"
     },
 
     {
@@ -29,33 +29,34 @@
   "mainHero": {
     "title": "Code for",
     "subtitle": "Singapore.",
-    "description": "A computer reads ones and zeros, but behind the code is a human heart building projects.",
+    "description": "Behind the ones and zeros, there's a heart that builds with purpose.",
     "img": "/assets/images/happyTeam.jpeg",
-    "primaryAction": {
-      "text": "Get started",
+    "primaryAction": { 
+      "text": "Get Involved",
       "href": "#"
     },
     "secondaryAction": {
-      "text": "Email us",
-      "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
+      "text": "Contact us",
+      "href": "mailto:lianexelbert@gmail.com?subject=Test!"
     }
   },
   "product": {
-    "title": "Code For Singapore",
+    "title": "What we do",
     "items": [
       {
-        "title": "A plug n play template",
-        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
+        "title": "Build for Good",
+        "description": "Always ideating, always solving — we code with purpose for the people. With empathy at our core, we build for the elderly, the vulnerable, and those often left behind. This is software for social good, rooted in Singapore's communities. We don’t just build apps — we build hope, access, and opportunity.",
+     
         "img": "/assets/images/product1.svg"
       },
       {
-        "title": "Make it your own!",
-        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
+        "title": "From Code to Community",
+        "description": "We create inclusive technology that uplifts the underserved in Singapore — from seniors to everyday citizens. Our tools are crafted for real needs, with real people in mind. By combining thoughtful code with local action, we aim to drive meaningful change. This is tech that matters.",
         "img": "/assets/images/product2.svg"
       }
     ]
   },
-  "features": {
+  "projects": {
     "title": "Latest & greatest ",
     "subtitle": "All the best technologies out there!",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
@@ -146,7 +147,6 @@
     ],
     "socialMedia": {
       "github": "https://github.com/issaafalkattan",
-      "twitter": "https://twitter.com/issaafkattan",
       "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
     }
   }
