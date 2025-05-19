@@ -1,10 +1,9 @@
 import React from 'react';
-
 import config from '../config/index.json';
 
 const Features = () => {
-  const { projects } = config;
-  const { title, subtitle, description, items: featuresList } = projects;
+  const { features } = config;
+  const { title, subtitle, description, items: featuresList } = features;
   return (
     <div className={`py-12 bg-background`} id="features">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,18 +26,6 @@ const Features = () => {
             {featuresList.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
-                  {/*
-                  // TODO , make this better 
-                  <div
-                    className={`absolute flex items-center justify-center h-12 w-12 rounded-md bg-background text-tertiary border-primary border-4`}
-                  >
-                    <img
-                      className={`inline-block h-6 w-6 rounded-full`}
-                      src={feature.icon}
-                      alt={feature.name}
-                    />
-                  </div>
-                  */}
                   <p className="ml-16 text-lg leading-6 font-medium text-gray-900">
                     {feature.name}
                   </p>

@@ -5,16 +5,12 @@
   },
   "navigation": [
     {
-      "name": "What we do",
+      "name": "About",
       "href": "product"
     },
     {
       "name": "Projects",
-      "href": "projects"
-    },
-    {
-      "name": "About",
-      "href": "about"
+      "href": "features"
     }
   ],
   "callToAction": {
@@ -28,11 +24,11 @@
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": { 
       "text": "Get Involved",
-      "href": "#"
+      "href": "https://t.me/+gFYTiaBz-zc1MjY1"
     },
     "secondaryAction": {
       "text": "Contact us",
-      "href": "mailto:lianexelbert@gmail.com?subject=Test!"
+      "href": "mailto:zhennan@c4sg.sg?subject=Code 4 Singapore - <Write your Enquiry>"
     }
   },
   "product": {
@@ -51,7 +47,7 @@
       }
     ]
   },
-  "projects": {
+  "features": {
     "title": "Latest & greatest ",
     "subtitle": "Projects That Make a Difference",
     "description": "Explore how we turn ideas into impact. These projects showcase the power of code when it’s built for people, purpose, and progress.",

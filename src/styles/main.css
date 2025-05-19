@@ -17,7 +17,9 @@ a:hover {
   @apply border-b-2 border-red-700;
 }
 
-
+a.no-global-style:hover {
+  @apply border-none; /* or border-b-0 if you want no bottom border */
+}
 
 .content p {
   @apply my-6;
