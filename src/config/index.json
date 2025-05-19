@@ -22,7 +22,7 @@
     "subtitle": "Singapore.",
     "description": "Behind the ones and zeros, there's a heart that builds with purpose.",
     "img": "/assets/images/happyTeam.jpeg",
-    "primaryAction": { 
+    "primaryAction": {
       "text": "Get Involved",
       "href": "https://t.me/+gFYTiaBz-zc1MjY1"
     },
@@ -37,12 +37,23 @@
       {
         "title": "Build for Good",
         "description": "Always ideating, always solving — we code with purpose for the people. With empathy at our core, we build for the elderly, the vulnerable, and those often left behind. This is software for social good, rooted in Singapore's communities. We don’t just build apps — we build hope, access, and opportunity.",
-     
+
         "img": "/assets/images/product1.svg"
       },
       {
         "title": "From Code to Community",
         "description": "We create inclusive technology that uplifts the underserved in Singapore — from seniors to everyday citizens. Our tools are crafted for real needs, with real people in mind. By combining thoughtful code with local action, we aim to drive meaningful change. This is tech that matters.",
+        "img": "/assets/images/product2.svg"
+      },
+      {
+        "title": "Why Volunteer With Us?",
+        "description": "Volunteering with Code for Singapore means being part of a dynamic team that is transforming communities. You'll gain valuable experience in software development, have the chance to work on real-world projects, and most importantly, contribute to the social good. You’ll also have the opportunity to connect with like-minded individuals and make lasting friendships!",
+
+        "img": "/assets/images/product1.svg"
+      },
+      {
+        "title": "Volunteering Opportunities",
+        "description": "We welcome volunteers from all backgrounds. Whether you're a developer, designer, project manager, researcher, or someone passionate about social impact, there’s a place for you with us. Explore the different ways you can contribute to our cause!",
         "img": "/assets/images/product2.svg"
       }
     ]
@@ -84,7 +95,7 @@
       }
     ]
   },
- 
+
   "about": {
     "socialMedia": {
       "github": "https://github.com/genzitizens?view_as=public",

@@ -5,7 +5,7 @@ import Divider from './Divider';
 
 const Product = () => {
   const { product } = config;
-  const [firstItem, secondItem] = product.items;
+  const { items } = product;
 
   return (
     <section className={`bg-background py-8`} id="product">
@@ -23,23 +23,36 @@ const Product = () => {
           ))}
         </h1>
         <Divider />
-        <div className={`flex flex-wrap`}>
-          <div className={`w-5/6 sm:w-1/2 p-6 mt-20`}>
-            <h3
-              className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
+
+        <div className="flex flex-col">
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className={`flex flex-wrap ${
+                index % 2 !== 0 ? 'flex-col-reverse sm:flex-row-reverse' : ''
+              }`}
             >
-              {firstItem?.title}
-            </h3>
-            <p className={`text-gray-600`}>{firstItem?.description}</p>
-          </div>
-          <div className={`w-full sm:w-1/2 p-6`}>
-            <img
-              className="h-6/6"
-              src={firstItem?.img}
-              alt={firstItem?.title}
-            />
-          </div>
+              {/* Text Section */}
+              <div className="w-full sm:w-1/2 p-6 mt-20">
+                <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+                  {item?.title}
+                </h3>
+                <p className="text-gray-600">{item?.description}</p>
+              </div>
+
+              {/* Image Section */}
+              <div className="w-full sm:w-1/2 p-6">
+                <img
+                  className="h-full w-full object-cover"
+                  src={item?.img}
+                  alt={item?.title}
+                />
+              </div>
+            </div>
+          ))}
         </div>
+
+        {/*
         <div className={`flex flex-wrap flex-col-reverse sm:flex-row`}>
           <div className={`w-full sm:w-1/2 p-6`}>
             <img
@@ -59,6 +72,7 @@ const Product = () => {
             </div>
           </div>
         </div>
+        */}
       </div>
     </section>
   );
