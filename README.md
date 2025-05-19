@@ -18,7 +18,7 @@ This repository was originally forked from:
 
 - React.js (Landing Page Template)
 - Tailwind CSS (Custom styling)
-- Deployed with GitHub Actions CICD & Docker 
+- Deployed with GitHub Actions CICD & Docker + GHCR  
 
 ## 🚀 Getting Started
 
