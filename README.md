@@ -26,4 +26,4 @@ To run the project locally:
 
 1. Clone the repository
 2. docker compose up -d 
-3. access via localhost:3000
+3. access via localhost:3000.
